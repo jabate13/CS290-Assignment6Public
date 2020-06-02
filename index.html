@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html lang='en'>
+    <head>
+      <meta name="viewport" content="width=device-width">
+      <title>Document</title>
+    </head>
+    <body>
+      <!-- Add row form-->
+      <!-- Name, reps, weight, lbs, date, submit button -->
+      <h1>Add a New Row</h1>
+        <form class="" action="index.html" method="post">
+          <input type="text" name="name">
+          <input type="number" name="reps">
+          <input type="number" name="weight">
+          <input type="radio" id='lbs' name="units" value="1">
+          <label for="lbs">lbs</label>
+          <input type="radio" id = "kg" name="units" value="0">
+          <label for="kg">Kg</label>
+          <input type="date" name="date" value="">
+          <input type="submit" name="submitButton" value="submit">
+        </form>
+
+      <!-- Table of data -->
+      <!-- Rows with id, name, resp, weight, lbs, date, update button (put), delete button (delete) -->
+      <h1>Workputs Table</h1>
+      <table id='workoutTable'></table>
+
+
+
+      <script src='script.js'>
+    </body>
+  </html>
