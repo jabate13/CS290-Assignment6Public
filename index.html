@@ -8,25 +8,25 @@
       <!-- Add row form-->
       <!-- Name, reps, weight, lbs, date, submit button -->
       <h1>Add a New Row</h1>
-        <form class="" action="index.html" method="post">
-          <input type="text" name="name">
-          <input type="number" name="reps">
-          <input type="number" name="weight">
+        <form id ="addForm" class="addForm">
+          <input id="inputName" type="text" name="name">
+          <input id="inputReps" type="number" name="reps">
+          <input id="inputWeight" type="number" name="weight">
           <input type="radio" id='lbs' name="units" value="1">
-          <label for="lbs">lbs</label>
+          <label id="" for="lbs">lbs</label>
           <input type="radio" id = "kg" name="units" value="0">
-          <label for="kg">Kg</label>
-          <input type="date" name="date" value="">
-          <input type="submit" name="submitButton" value="submit">
+          <label id="" for="kg">Kg</label>
+          <input id="inputDate" type="date" name="date" value="">
+          <input id="addButton" type="submit" name="submitButton" value="submit">
         </form>
 
       <!-- Table of data -->
       <!-- Rows with id, name, resp, weight, lbs, date, update button (put), delete button (delete) -->
-      <h1>Workputs Table</h1>
+      <h1>Workouts Table</h1>
       <table id='workoutTable'></table>
 
 
 
-      <script src='script.js'>
+      <script src='script.js'></script>
     </body>
   </html>
