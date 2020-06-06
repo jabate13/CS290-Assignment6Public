@@ -3,6 +3,7 @@
     <head>
       <meta name="viewport" content="width=device-width">
       <title>Document</title>
+      <link rel="stylesheet" href="style.css">
     </head>
     <body>
       <!-- Add row form-->
@@ -25,7 +26,38 @@
       <h1>Workouts Table</h1>
       <table id='workoutTable'></table>
 
+      <div class="popup" id="popup">
+        <div class="popupHeader">
+          <div class="title">Update the Row</div>
+          <button class="closeButton" type="button" name="button">&times;</button>
+        </div>
+        <div class="popupBody">
+          <form id ="updateForm" class="updateForm">
+            <label for="updateName">Name: </label>
+            <input id="updateName" type="text" name="name">
+            <br>
+            <label for="updateReps">Reps: </label>
+            <input id="updateReps" type="number" name="reps">
+            <br>
+            <label for="updateWeight">Weight: </label>
+            <input id="updateWeight" type="number" name="weight">
+            <br>
+            <label id="updateUnits" for="updatelbs">lbs</label>
+            <input type="radio" id='updatelbs' name="updateUnits" value="1">
+            <br>
+            <label id="updateUnits" for="updatekg">Kg</label>
+            <input type="radio" id = "updatekg" name="updateUnits" value="0">
+            <br>
+            <label for="updateDate">Date: </label>
+            <input id="updateDate" type="date" name="date" value="">
+            <br>
+            <input id="updateFormButton" type="submit" name="submitButton" value="Change">
+          </form>
 
+        </div>
+      </div>
+
+      <div class="" id="overlay"></div>
 
       <script src='script.js'></script>
     </body>
